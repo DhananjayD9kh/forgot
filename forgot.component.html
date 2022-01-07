@@ -1,0 +1,23 @@
+
+<div class="container mt-1 bg-white">
+    <div class="row app-container pt-2 pb-2" >
+        <div class="col-lg-7 offset-md-1" style="width: 25rem;">
+            <div class="card mb-2" >
+                <div class="card-body">
+                    <form [formGroup]="forgotForm" #usersForm="ngForm" (ngSubmit)="getForgotFormData(usersForm.value)">
+                    
+                    <h1>Forgot Password</h1>
+                    <label for="email"><b>Email Id.:</b></label>
+                    <input type="text" name="email" Ngmodel  placeholder="Enter Email Id" required class="form-control" >
+
+                    <span style="color: red; margin-left: 30%;">Enter Valid Email Id.</span><br>
+
+                    <button type="button"   href="#" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm" style="margin-left: 35%;">Submit</button>
+                    </form>
+                
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
